@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/study/git projects/Implementation-of-data-structures/Dequeue-Queue-Stack/main.cpp
+iostream
+-
+cassert
+-
+string
+-
+vector
+-
+sstream
+-
+
