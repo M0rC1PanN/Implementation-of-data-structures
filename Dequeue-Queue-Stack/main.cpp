@@ -499,9 +499,6 @@ int QueueTests() {
     assert(queue.Pop());
     assert(queue.Size() == 0);
   }
-
-
-  return 0;
 }
 
 
@@ -515,4 +512,5 @@ void TestAll() {
 
 int main() {
   TestAll();
+  return 0;
 }
