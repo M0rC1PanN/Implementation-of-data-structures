@@ -3,6 +3,53 @@
 
 #include <iostream>
 #include <sstream>
+#include <set>
+#include <map>
+#include <vector>
+
+template<class T>
+// set
+std::ostream& operator<<(std::ostream& os, const std::set<T>& s) {
+  os << "{";
+  bool first = true;
+  for (const auto& x : s) {
+    if (!first) {
+      os << ", ";
+    }
+    first = false;
+    os << x;
+  }
+  return os << "}";
+}
+template<class K, class V>
+// map
+std::ostream& operator<<(std::ostream& os, const std::map<K, V>& m) {
+  os << "{";
+  bool first = true;
+  for (const auto& kv : m) {
+    if (!first) {
+      os << ", ";
+    }
+    first = false;
+    os << kv.first << ": " << kv.second;
+  }
+  return os << "}";
+}
+
+template<typename First, typename Second>
+// pair
+std::ostream& operator<<(std::ostream& out, const std::pair<First, Second>& p) {
+  out << p.first << ", " << p.second;
+  return out;
+}
+template<typename T>
+// vector
+std::ostream& operator<<(std::ostream& out, const std::vector<T>& vi) {
+  for (const auto& i : vi) {
+    out << i << ' ';
+  }
+  return out;
+}
 
 template<class T, class U>
 void AssertEqual(const T& t, const U& u,

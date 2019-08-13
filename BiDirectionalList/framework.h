@@ -1,10 +1,55 @@
 #ifndef BIDIRECTIONALLIST_FRAMEWORK_H
 #define BIDIRECTIONALLIST_FRAMEWORK_H
 
-#include <sstream>
-#include <exception>
 #include <iostream>
-#include <string>
+#include <sstream>
+#include <set>
+#include <map>
+#include <vector>
+
+template<class T>
+// set
+std::ostream& operator<<(std::ostream& os, const std::set<T>& s) {
+  os << "{";
+  bool first = true;
+  for (const auto& x : s) {
+    if (!first) {
+      os << ", ";
+    }
+    first = false;
+    os << x;
+  }
+  return os << "}";
+}
+template<class K, class V>
+// map
+std::ostream& operator<<(std::ostream& os, const std::map<K, V>& m) {
+  os << "{";
+  bool first = true;
+  for (const auto& kv : m) {
+    if (!first) {
+      os << ", ";
+    }
+    first = false;
+    os << kv.first << ": " << kv.second;
+  }
+  return os << "}";
+}
+
+template<typename First, typename Second>
+// pair
+std::ostream& operator<<(std::ostream& out, const std::pair<First, Second>& p) {
+  out << p.first << ", " << p.second;
+  return out;
+}
+template<typename T>
+// vector
+std::ostream& operator<<(std::ostream& out, const std::vector<T>& vi) {
+  for (const auto& i : vi) {
+    out << i << ' ';
+  }
+  return out;
+}
 
 template<class T, class U>
 void AssertEqual(const T& t, const U& u,
@@ -20,6 +65,17 @@ void AssertEqual(const T& t, const U& u,
 inline void Assert(bool b, const std::string& hint) {
   AssertEqual(b, true, hint);
 }
+
+template<class T, class U>
+void AssertEqualNO(const T& t, const U& u,
+                 const std::string& hint) {
+  if (t != u) {
+    std::ostringstream os;
+    os << " hint: " << hint;
+    throw std::runtime_error(os.str());
+  }
+}
+
 
 class TestRunner {
  public:

@@ -6,6 +6,8 @@
 #include <string>
 #include <exception>
 #include <iostream>
+#include <algorithm>
+
 
 void TestIterator ();
 

@@ -168,7 +168,7 @@ BiDirectionalList<T>::Iterator::operator--() {
 }
 
 template<typename T>
-typename BiDirectionalList<T>::Iterator
+const typename BiDirectionalList<T>::Iterator
 BiDirectionalList<T>::Iterator::operator--(int) {
   if (node_ == list_->first_) {
     throw std::runtime_error("Out of range: decrement begin");
@@ -217,7 +217,7 @@ BiDirectionalList<T>::ConstIterator::operator++() {
 }
 
 template<typename T>
-typename BiDirectionalList<T>::ConstIterator
+const typename BiDirectionalList<T>::ConstIterator
 BiDirectionalList<T>::ConstIterator::operator++(int) {
   if (node_ == nullptr) {
     throw std::runtime_error("Out of range: increment nullptr");
@@ -242,7 +242,7 @@ BiDirectionalList<T>::ConstIterator::operator--() {
 }
 
 template<typename T>
-typename BiDirectionalList<T>::ConstIterator
+const typename BiDirectionalList<T>::ConstIterator
 BiDirectionalList<T>::ConstIterator::operator--(int) {
   if (node_ == list_->first_) {
     throw std::runtime_error("Out of range: decrement begin");
