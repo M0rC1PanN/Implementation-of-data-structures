@@ -9,11 +9,8 @@
 #include <algorithm>
 
 
-void TestIterator ();
-
-void TestConstIterator();
-
 void TestLinkedList();
 
+void TestConstLinkedList();
 
 void TestAll();

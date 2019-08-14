@@ -456,7 +456,7 @@ void BiDirectionalList<T>::PushBack(const T& value) {
 }
 
 template<typename T>
-void BiDirectionalList<T>::PushBack(T&& value) { // ?
+void BiDirectionalList<T>::PushBack(T&& value) {
   InsertAfter(last_, new Node(std::move(value)));
 }
 

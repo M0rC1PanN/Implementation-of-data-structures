@@ -62,6 +62,17 @@ void AssertEqual(const T& t, const U& u,
   }
 }
 
+template<class T, class U>
+void AssertNEqual(const T& t, const U& u,
+                 const std::string& hint) {
+  if (t == u) {
+    std::ostringstream os;
+    os << "Assertion failed: " << t << " == " << u
+       << " hint: " << hint;
+    throw std::runtime_error(os.str());
+  }
+}
+
 inline void Assert(bool b, const std::string& hint) {
   AssertEqual(b, true, hint);
 }
@@ -71,11 +82,20 @@ void AssertEqualNO(const T& t, const U& u,
                  const std::string& hint) {
   if (t != u) {
     std::ostringstream os;
-    os << " hint: " << hint;
+    os << "Assertion failed, hint: " << hint;
     throw std::runtime_error(os.str());
   }
 }
 
+template<class T, class U>
+void AssertNEqualNO(const T& t, const U& u,
+                  const std::string& hint) {
+  if (t == u) {
+    std::ostringstream os;
+    os << "Assertion failed, hint: " << hint;
+    throw std::runtime_error(os.str());
+  }
+}
 
 class TestRunner {
  public:
