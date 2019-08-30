@@ -3,6 +3,10 @@
 
 #include "framework.h"
 #include "bin_tree.h"
+#include <algorithm>
+#include <random>
+
+void TestEmpty();
 
 void TestAll();
 

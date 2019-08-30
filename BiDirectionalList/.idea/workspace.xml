@@ -11,14 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77024861-1461-4404-aca7-484cc03294fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework.h" beforeDir="false" afterPath="$PROJECT_DIR$/framework.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.h" beforeDir="false" afterPath="$PROJECT_DIR$/list.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.h" beforeDir="false" afterPath="$PROJECT_DIR$/test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BinaryTree/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../BinaryTree/test.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="77024861-1461-4404-aca7-484cc03294fc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +74,7 @@
       <workItem from="1565423559054" duration="354000" />
       <workItem from="1565689037610" duration="8492000" />
       <workItem from="1565770760105" duration="291000" />
-      <workItem from="1565771244239" duration="3258000" />
+      <workItem from="1565771244239" duration="3291000" />
     </task>
     <task id="LOCAL-00001" summary="Adding bidirectional linked list with iterators">
       <created>1565027734211</created>
@@ -104,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565698357158</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tests for linked list vol.2">
+      <created>1565801414425</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565801414425</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +127,8 @@
     <MESSAGE value="Adding bidirectional linked list with iterators" />
     <MESSAGE value="Adding binary tree" />
     <MESSAGE value="Tests for linked list vol.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests for linked list vol.1" />
+    <MESSAGE value="Tests for linked list vol.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests for linked list vol.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
