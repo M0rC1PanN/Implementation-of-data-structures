@@ -58,7 +58,5 @@ void TestAll() {
   AssertEqualNO(hm, hm3, "6.2");
   hm3.Insert("point");
   AssertNEqualNO(hm, hm3, "6.2");
-  HashMap hm4(std::move(hm));
-  AssertEqualNO(hm2, hm4, "6.3");
 }
 

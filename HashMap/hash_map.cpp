@@ -96,12 +96,10 @@ HashMap::HashMap(const HashMap& other) : max_size_(other.max_size_),
   }
 }
 
-HashMap::HashMap(HashMap&& other)
-noexcept : max_size_(other.max_size_),
-           num_of_el_(other.num_of_el_),
-           hash_map_(std::move(other.hash_map_)) {}
 
-HashMap::~HashMap() = default;
+HashMap::~HashMap() {
+  Clear();
+}
 
 HashMap::Node* HashMap::Search(const std::string& data) const {
   SearchPrev(data, false);

@@ -37,7 +37,6 @@ class HashMap {
 
   HashMap();
   HashMap(const HashMap&);
-  HashMap(HashMap&&) noexcept;
   ~HashMap();
 
   Node* Search(const std::string& data) const;
