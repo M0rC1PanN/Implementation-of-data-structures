@@ -1,4 +1,0 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/mnt/d/study/git projects/Implementation-of-data-structures/Vector"
--- Configuring done
--- Generating done
--- Build files have been written to: /mnt/d/study/git projects/Implementation-of-data-structures/Vector/cmake-build-debug

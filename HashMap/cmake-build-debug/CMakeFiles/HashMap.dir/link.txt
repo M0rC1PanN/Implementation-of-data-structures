@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/HashMap.dir/main.cpp.o CMakeFiles/HashMap.dir/hash_map.cpp.o CMakeFiles/HashMap.dir/test.cpp.o  -o HashMap 
