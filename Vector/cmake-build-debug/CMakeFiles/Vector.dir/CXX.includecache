@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/study/git projects/Implementation-of-data-structures/Vector/main.cpp
+tests.h
+/mnt/d/study/git projects/Implementation-of-data-structures/Vector/tests.h
+
+/mnt/d/study/git projects/Implementation-of-data-structures/Vector/tests.cpp
+tests.h
+/mnt/d/study/git projects/Implementation-of-data-structures/Vector/tests.h
+
+/mnt/d/study/git projects/Implementation-of-data-structures/Vector/tests.h
+vector.h
+/mnt/d/study/git projects/Implementation-of-data-structures/Vector/vector.h
+
+/mnt/d/study/git projects/Implementation-of-data-structures/Vector/vector.h
+cassert
+-
+iostream
+-
+string
+-
+utility
+-
+typeinfo
+-
+algorithm
+-
+

@@ -1,0 +1,54 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/framework.h
+iostream
+-
+sstream
+-
+set
+-
+map
+-
+vector
+-
+
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/hash_map.cpp
+hash_map.h
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/hash_map.h
+
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/hash_map.h
+iostream
+-
+utility
+-
+vector
+-
+cassert
+-
+fstream
+-
+map
+-
+algorithm
+-
+
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/main.cpp
+test.h
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/test.h
+
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/test.cpp
+test.h
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/test.h
+
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/test.h
+hash_map.h
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/hash_map.h
+framework.h
+/mnt/d/study/git projects/Implementation-of-data-structures/HashMap/framework.h
+

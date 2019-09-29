@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/Dequeue_Queue_Stack.dir/main.cpp.o CMakeFiles/Dequeue_Queue_Stack.dir/tests.cpp.o  -o Dequeue_Queue_Stack 

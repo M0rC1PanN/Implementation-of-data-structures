@@ -1,0 +1,3 @@
+/mnt/d/study/git projects/Implementation-of-data-structures/Dequeue-Queue-Stack/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/study/git projects/Implementation-of-data-structures/Dequeue-Queue-Stack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/study/git projects/Implementation-of-data-structures/Dequeue-Queue-Stack/cmake-build-debug/CMakeFiles/Dequeue_Queue_Stack.dir
