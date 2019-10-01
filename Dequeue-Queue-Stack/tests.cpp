@@ -1,9 +1,8 @@
 #include "tests.h"
 
-
 void DequeTests() {
   {
-    const Deque deque(5);
+    const Deque<int> deque(5);
     assert(deque.IsEmpty());
     assert(!deque.IsFull());
     assert(deque.Size() == 0);
@@ -14,7 +13,7 @@ void DequeTests() {
     assert(deque.Back(0) == 0);
   }
   {
-    Deque deque(5);
+    Deque<int> deque(5);
 
     assert(!deque.PopBack());
 
@@ -61,7 +60,7 @@ void DequeTests() {
     assert(deque.IsFull());
   }
   {
-    Deque deque(5);
+    Deque<int> deque(5);
 
     assert(!deque.PopFront());
 
@@ -109,7 +108,7 @@ void DequeTests() {
 
   }
   {
-    Deque deque(3);
+    Deque<int> deque(3);
 
     assert(deque.PushFront(1));
 
@@ -163,7 +162,7 @@ void DequeTests() {
 
 void StackTests() {
   {
-    Stack stack(2);
+    Stack<int> stack(2);
     assert(stack.IsEmpty());
     assert(!stack.IsFull());
     assert(stack.Size() == 0);
@@ -172,7 +171,7 @@ void StackTests() {
     assert(stack.Top(0) == 0);
   }
   {
-    Stack stack(2);
+    Stack<int> stack(2);
 
     assert(stack.Size() == 0);
     assert(stack.MaxSize() == 2);
@@ -230,7 +229,7 @@ void StackTests() {
 
 int QueueTests() {
   {
-    Queue queue(2);
+    Queue<int> queue(2);
     assert(queue.IsEmpty());
     assert(!queue.IsFull());
     assert(queue.Size() == 0);
@@ -239,7 +238,7 @@ int QueueTests() {
     assert(queue.Front(0) == 0);
   }
   {
-    Queue queue(2);
+    Queue<int> queue(2);
 
     assert(queue.Size() == 0);
     assert(queue.MaxSize() == 2);
@@ -311,8 +310,6 @@ int QueueTests() {
   }
 }
 
-
-
 void TestAll() {
   TestRunner tr;
   tr.RunTest(DequeTests, "DequeTests");
@@ -333,10 +330,8 @@ void TestRunner::RunTest(TestFunc func, const std::string& test_name) {
     func();
     std::cerr << test_name << " OK" << std::endl;
   } catch (std::runtime_error& e) {
-    ++
-        fail_count;
-    std::cerr << test_name << " fail: " << e.
-        what() << std::endl;
+    ++fail_count;
+    std::cerr << test_name << " fail: " << e.what() << std::endl;
   }
 }
 

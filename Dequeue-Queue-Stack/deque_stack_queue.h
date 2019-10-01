@@ -3,12 +3,11 @@
 #include <vector>
 #include <iostream>
 
+template <typename T>
 class Deque {
  public:
   explicit Deque(int max_size) : size_(0), head_(0), tail_(0) {
-
     data_.resize(max_size);
-
   }
 
   int Size() const {
@@ -92,12 +91,13 @@ class Deque {
   }
 
  private:
-  std::vector<int> data_;
+  std::vector<T> data_;
   int head_;
   int tail_;
   int size_;
 };
 
+template <typename T>
 class Queue {
  public:
   explicit Queue(int max_size) : queue_(max_size) {}
@@ -124,9 +124,10 @@ class Queue {
   }
 
  private:
-  Deque queue_;
+  Deque<T> queue_;
 };
 
+template <typename T>
 class Stack {
  public:
   explicit Stack(int max_size) : stack_(max_size) {}
@@ -153,7 +154,7 @@ class Stack {
   }
 
  private:
-  Deque stack_;
+  Deque<T> stack_;
 };
 
 #endif //DEQUEUE_QUEUE_STACK_DEQUE_STACK_QUEUE_H
