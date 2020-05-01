@@ -1,4 +1,4 @@
-# Implementation-of-data-structures 
+# Implementation of data structures 
 This repo demonstrates my understanding of organisation and functional of basic data structures on C++ with tests to them.  
 * __Dequeue-Queue-Stack.c++:__ includes 3 template adapted structures with tests of implementation. 
   * Queue — a linear data structure that performs first in last out (FILO) rule. 
